@@ -1,0 +1,72 @@
+/* * {
+    border: 1px solid red;
+}  */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: ivory;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: teal;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;  /* Adding a light background color for the header */
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header h1 {
+    margin-right: auto;  /* Pushes the nav to the right */
+}
+
+header li {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav, ul {
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;  /* Changing the color of the links to black */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > div {
+    flex: 1;
+}
+
+@media screen and (max-width: 820px) {
+    html {
+        font-size: 12px;
+    }
+
+    header li {
+        font-size: 0.95rem;
+        padding: 5px;
+        margin: 5px;
+    }
+
+}
